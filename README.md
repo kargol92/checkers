@@ -14,7 +14,7 @@ Język
 
 Autor
 -----
-Karol Kiersnowski
+kargol92
 
 Licencja
 --------
