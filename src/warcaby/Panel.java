@@ -133,14 +133,14 @@ public class Panel extends JPanel implements ActionListener, MouseListener {
     void rysujMenu() {
         g2d.setColor(Black);
         g2d.setFont(new Font("Arial Bold", Font.ITALIC, 28));
-        g2d.drawString("WARCABY", 400, 50);
-        nowaGra.setBounds(420, 90, 100, 30);
-        cofnij.setBounds(420, 130, 100, 30);
+        g2d.drawString("WARCABY", 405, 50);
+        nowaGra.setBounds(415, 90, 120, 30);
+        cofnij.setBounds(415, 130, 120, 30);
         g2d.setFont(new Font("Helvetica", Font.PLAIN, 20));
         
         if( wyswietlanyStanGry == true ) {
             g2d.drawString("Gracz 1", 395, 230);
-        g2d.drawString("Gracz 2", 395, 260);
+            g2d.drawString("Gracz 2", 395, 260);
             g2d.setFont(new Font("Helvetica", Font.PLAIN, 14));
             g2d.drawString(Gracz.lPionkow1+" pionków", 475, 230);
             g2d.drawString(Gracz.lPionkow2+" pionków", 475, 260);
@@ -148,14 +148,14 @@ public class Panel extends JPanel implements ActionListener, MouseListener {
             g2d.drawString("Ruch należy", 395, 310);
             g2d.drawString("do gracza "+Gracz.ruch+".", 395, 330);
             g2d.setColor(Color.lightGray);
-            g2d.fillRect( plansza.WspX+Pole.szer*8+100,290,Pole.szer,Pole.szer );
+            g2d.fillRect( plansza.WspX+Pole.szer*8+120,290,Pole.szer,Pole.szer );
             if( Gracz.ruch == 1 ) {
                 g2d.setColor(Black);
-                g2d.fillOval( Pole.szer*8+8+100,8+290, Pole.szerPionka, Pole.szerPionka );
+                g2d.fillOval( Pole.szer*8+8+120,8+290, Pole.szerPionka, Pole.szerPionka );
             }
             else if( Gracz.ruch == 2 ) {
                 g2d.setColor(White);
-                g2d.fillOval( Pole.szer*8+8+100,8+290, Pole.szerPionka, Pole.szerPionka );
+                g2d.fillOval( Pole.szer*8+8+120,8+290, Pole.szerPionka, Pole.szerPionka );
             }
         }
     }
